@@ -2,11 +2,24 @@
 <html>
   <head> </head>
 
+  <div id="errorMessage" data-test-id="errorMessage"></div>
   <form>
-    <input type="number" name="bagsOfCorn" />
+    <label for="bagsOfCorn">Bags of Corn</label>
+    <input type="number" id="bagsOfCorn" name="bagsOfCorn" value="0" />
+    <br />
+    <label for="numberOfGeese">Number of Geese</label>
+    <input type="number" id="numberOfGeese" name="numberOfGeese" value="0" />
+    <br />
     <input type="submit" />
   </form>
-  <div data-test-id="tripCost"></div>
+
+  <br />
+
+  <table id="tripSteps" data-test-id="tripSteps"></table>
+
+  <br />
+
+  <div id="tripCost" data-test-id="tripCost"></div>
 
   <script src="form.js"></script>
 </html>
