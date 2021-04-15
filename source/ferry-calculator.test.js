@@ -10,6 +10,9 @@ test("Given 1 bag, the cost of transport is 25 pence", () => {
   expect(cost).toBe(25);
 });
 
+/*
+ A single trip with no bags still costs 25p because the farmer ends up at the market
+*/
 test("Given 0 bags, the cost of transport is 25 pence", () => {
   var cost = calculateTripCost(0);
   expect(cost).toBe(25);
